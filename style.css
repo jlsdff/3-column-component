@@ -92,7 +92,7 @@ button:hover {
     main {
         flex-direction: row;
         max-width: 70vw;
-        min-height: 70vh;
+        max-height: 70vh;
     }
     button {
         margin-top: 3rem;
