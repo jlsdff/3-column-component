@@ -45,6 +45,7 @@ h1 {
     font-family: var(--font-main);
     padding: 1.5rem 0px;
     letter-spacing: .1em;
+    text-transform: uppercase;
 }
 p {
     color: var(--Transparent-white);
@@ -91,6 +92,10 @@ button:hover {
     main {
         flex-direction: row;
         max-width: 70vw;
+        min-height: 70vh;
+    }
+    button {
+        margin-top: 3rem;
     }
     .sedans {
         border-radius: 8px 0px 0px 8px;
