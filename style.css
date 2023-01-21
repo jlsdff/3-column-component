@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0px;    
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    /* ### Primary */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* ### Neutral */
+
+    --Transparent-white : hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Very-light-gray : hsl(0, 0%, 95%) ;/*(background, headings, buttons)*/
+
+    --font-main: 'Big Shoulders Display', cursive;
+    --font-sub: 'Lexend Deca', sans-serif;
+
+    --weight-reg: 400;
+    --weight-bold: 700;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    border-radius: 8px;
+}
+div {
+    padding: 2rem 4rem 2rem 2rem;
+}
+h1 {
+    color: var(--Very-light-gray);
+    font-family: var(--font-main);
+    padding: 1.5rem 0px;
+    letter-spacing: .1em;
+}
+p {
+    color: var(--Transparent-white);
+    font-family: var(--font-sub);
+    padding-bottom: 1.5rem;
+}
+.sedans {
+    background-color: var(--Bright-orange);
+    border-radius: 8px 8px 0px 0px;
+}
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 0px 8px 8px;
+}
+button {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 24px;
+    background-color: var(--Very-light-gray);
+    font-family: var(--font-sub);
+    letter-spacing: .1em;
+    font-weight: var(--weight-bold);
+}
+.sedans > button {
+    color: var(--Bright-orange);
+}
+.suvs > button {
+    color: var(--Dark-cyan);
+}
+.luxury > button {
+    color: var(--Very-dark-cyan);
+}
+
+button:hover {
+    outline: 2px solid var(--Very-light-gray);
+    background-color: transparent;
+    color: var(--Very-light-gray);
+    cursor: pointer;
+}
+@media only screen and (min-width: 1081px) {
+    main {
+        flex-direction: row;
+        max-width: 70vw;
+    }
+    .sedans {
+        border-radius: 8px 0px 0px 8px;
+    }
+    .luxury {
+        border-radius: 0px 8px 8px 0px;
+    }
+}
